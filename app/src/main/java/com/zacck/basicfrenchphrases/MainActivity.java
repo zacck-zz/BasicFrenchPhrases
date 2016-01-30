@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void ButtonTapped(View view)
+    public void buttonTapped(View view)
     {
         int id = view.getId();
         String ourId ="";
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         //lets instantiate a mediaplayer
         MediaPlayer mPlayer = MediaPlayer.create(this,resourceId);
+        mPlayer.start();
     }
 
 }
